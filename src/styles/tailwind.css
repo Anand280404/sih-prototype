@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #F8FDF8; /* soft mint white */
+    --color-foreground: #1B5E20; /* deep forest green */
+    --color-border: rgba(45, 125, 50, 0.2); /* primary green at low opacity */
+    --color-input: #FFFFFF; /* pure white */
+    --color-ring: #2D7D32; /* forest green */
+    
+    /* Card Colors */
+    --color-card: #FFFFFF; /* pure white */
+    --color-card-foreground: #1B5E20; /* deep forest green */
+    --color-popover: #FFFFFF; /* pure white */
+    --color-popover-foreground: #1B5E20; /* deep forest green */
+    
+    /* Muted Colors */
+    --color-muted: #F8FDF8; /* soft mint white */
+    --color-muted-foreground: #4A4A4A; /* neutral gray */
+    
+    /* Primary Colors */
+    --color-primary: #2D7D32; /* forest green */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #1976D2; /* ocean blue */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Destructive Colors */
+    --color-destructive: #E57373; /* soft coral red */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #FF6B35; /* warm orange */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Success Colors */
+    --color-success: #4CAF50; /* bright green */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    /* Warning Colors */
+    --color-warning: #FFC107; /* golden yellow */
+    --color-warning-foreground: #1B5E20; /* deep forest green */
+    
+    /* Error Colors */
+    --color-error: #E57373; /* soft coral red */
+    --color-error-foreground: #FFFFFF; /* white */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka One', cursive;
+  }
+  
+  .font-caption {
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .font-data {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
